@@ -1,0 +1,279 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+body {
+	   background: rgb(162,141,141);
+background: linear-gradient(90deg, rgba(162,141,141,1) 0%, rgba(44,181,252,1) 100%);  }
+/*********HELPERS**************/
+
+
+
+/********AREA DEL HEADER*************/
+.header-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 50vh;
+}
+.title {
+	display: flex;
+	justify-content: center;
+	padding: 12px;
+	font-size: 1.9rem;
+}
+h1 {
+	color: black;
+}
+
+.role-description {
+	display: flex;
+	justify-content: center;
+	padding: 12px;
+}
+.role-description-text {
+	font-size: 1.2rem;
+	color: black;
+
+}
+/****************UN POCO SOBRE MI****************/
+.about-me {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+}
+.face-pic {
+	display: flex;
+	justify-content: center;
+}
+.image {
+	border-radius: 10%;
+	margin-bottom: 20px;
+}
+.own-descr {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*width: 50%;*/
+	margin: auto;
+	height: 55%;
+	border: solid 1px;
+	padding: 15px;
+}
+.own-descr-text {
+	font-size: 1.2rem;
+	color: white;
+	/*font-weight: 120;*/
+}
+/**************AREA LO QUE HAGO************/
+.what-i-do-section {
+	margin-top: 40px;
+	border: solid 2px;
+	padding: 20px;
+}
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	width:90%;
+	margin: auto;
+}
+
+.separation {
+	padding: 20px;
+	text-align: center;
+
+}
+.subtitle {
+	display: flex;
+	justify-content: center;
+}
+/**********************CV*********************/
+.resume-container {
+	display: flex;
+	padding:60px;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	margin: auto;
+	border-radius: 10px;
+	height: 300px;
+	border: solid 1px;
+	background: rgb(124,114,112);
+background: linear-gradient(90deg, rgba(124,114,112,1) 0%, rgba(140,146,255,1) 100%);
+}
+.resume-container > a {
+	text-decoration: none;
+}
+/*.download-cv {
+	padding:20px;
+	font-size: 1.1rem;
+	color: white;
+	background-color: black;
+	border-radius: 8px;
+	transition: all 300ms;
+}*/
+
+.download-cv:hover {
+	 background: rgb(15,191,242);
+background: linear-gradient(90deg, rgba(15,191,242,1) 0%, rgba(202,255,140,1) 100%); 
+	color: black;
+}
+
+/*********************PROJECTS*************/
+.projects-title-container {
+	display: flex;
+	justify-content: center;
+	width:100%;
+	padding:30px;
+}
+.project-section {
+	margin-bottom: 30px;
+}
+/******MQ**********************/
+@media(min-width: 200px) {
+.col-1-sm{width: 8.33%;
+border: solid 1px blue;}
+.col-2-sm {width: 16.66%;
+border: solid 1px blue;}
+.col-3-lsm{width: 25%;
+border: solid 1px blue;}
+.col-4-sm {
+	width: 33.33%;
+	border: solid 1px blue;
+}
+.col-5-sm {width: 41.66%;
+	border: solid 1px blue;}
+.col-6-sm {width: 50%;
+border: solid 1px blue;}
+.col-7-sm {width: 58.33%;
+border: solid 1px blue;}
+.col-8-sm {width: 66.66%;
+border: solid 1px blue;}
+.col-9-sm {width: 75%;
+border: solid 1px blue;}
+.col-10-sm {width: 83.33%;
+border: solid 1px blue;}
+.col-11-sm {width: 91.66%;
+border: solid 1px blue;}
+.col-12-sm {width: 100%;
+border: solid 1px blue;}
+
+.what-i-do-section {
+	margin-top: 50px;
+	width: 100%;
+	/*border: solid 2px;
+	padding: 20px;*/
+}
+.resume-container {
+	/*display: flex;*/
+	padding:10px;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	/*margin: auto;*/
+	border-radius: 10px;
+	height: 300px;
+	border: solid 1px;
+	background-size: cover;
+	background-image: url("https://images.pexels.com/photos/3844565/pexels-photo-3844565.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	/*background: rgb(124,114,112);
+background: linear-gradient(90deg, rgba(124,114,112,1) 0%, rgba(140,146,255,1) 100%);
+*/}
+.download-cv {
+
+	padding:2px;
+	font-size: 1rem;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+	
+}
+}
+/*************MEDIANAS**************/
+@media(min-width: 600px) {
+.col-1-md{width: 8.33%;
+border: solid 1px blue;}
+.col-2-md {width: 16.66%;
+border: solid 1px blue;}
+.col-3-md {width: 25%;
+border: solid 1px blue;}
+.col-4-md {
+	width: 33.33%;
+	border: solid 1px blue;
+}
+.col-5-md {width: 41.66%;
+	border: solid 1px blue;}
+.col-6-md {width: 50%;
+border: solid 1px blue;}
+.col-7-md {width: 58.33%;
+border: solid 1px blue;}
+.col-8-md {width: 66.66%;
+border: solid 1px blue;}
+.col-9-md {width: 75%;
+border: solid 1px blue;}
+.col-10-md {width: 83.33%;
+border: solid 1px blue;}
+.col-11-md {width: 91.66%;
+border: solid 1px blue;}
+.col-12-md {width: 100%;
+border: solid 1px blue;}
+.own-descr {
+	width: 50%;
+}
+
+.download-cv {
+	padding:5px;
+	font-size: 1rem;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+	
+}
+}
+@media(min-width: 992px) {
+.col-1-lg{width: 8.33%;
+border: solid 1px blue;}
+.col-2-lg {width: 16.66%;
+border: solid 1px blue;}
+.col-3-lg {width: 25%;
+border: solid 1px blue;}
+.col-4-lg {
+	width: 33.33%;
+	border: solid 1px blue;
+}
+.col-5-lg {width: 41.66%;
+	border: solid 1px blue;}
+.col-6-lg {width: 50%;
+border: solid 1px blue;}
+.col-7-lg {width: 58.33%;
+border: solid 1px blue;}
+.col-8-lg {width: 66.66%;
+border: solid 1px blue;}
+.col-9-lg {width: 75%;
+border: solid 1px blue;}
+.col-10-lg {width: 83.33%;
+border: solid 1px blue;}
+.col-11-lg {width: 91.66%;
+border: solid 1px blue;}
+.col-12-lg {width: 100%;
+border: solid 1px blue;}
+
+.own-descr {
+	width: 50%;
+}
+.download-cv {
+	padding:20px;
+	font-size: 1.1rem;
+	color: white;
+	background-color: black;
+	border-radius: 8px;
+	transition: all 300ms;
+}
+
+
+}
